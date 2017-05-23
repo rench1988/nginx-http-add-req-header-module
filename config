@@ -1,0 +1,10 @@
+ngx_addon_name=ngx_http_add_req_header_module
+
+ADD_REQ_HEADER_SRC="$ngx_addon_dir/ngx_http_add_req_header_module.c"
+
+ngx_module_type=HTTP
+ngx_module_name=$ngx_addon_name
+ngx_module_srcs="$ADD_REQ_HEADER_SRC"
+
+. auto/module
+
